@@ -1,0 +1,212 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #5a574c;
+}
+.top-bar{
+	width: 100%;
+	height: 80px;
+	/*background: #dddddd;*/
+	background-color: #5a574c;
+}
+.top-mostbar{
+	width: 100%;
+	height: 20px;
+	background-color: grey;
+}
+.katale-body{
+
+}
+.sidebar{
+	background: #dddddd;
+	height: 900px;
+	padding-left: 15px;
+	padding-top: 15px;
+}
+.product-page{
+	background-color: #5a574c;
+	height: auto;
+
+}
+.footer-first{
+margin-top: 50px;
+background: #dddddd;
+
+height: 100px;
+}
+.footer-last{
+height: 100px;
+
+background-color: #5a574c;
+}
+.product{
+	border: 1px solid;
+	height: 400px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.product-image{
+	
+	width: 100%;
+	padding: 5px;
+	height: 200px;
+	
+
+}
+.product-description{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	color: white;
+}
+.price{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	color: white;
+}
+.basket{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	color: white;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.rsvp-button:hover {
+    border-color: #fff;
+    color: #fff;
+}
+.rsvp-button {
+width: 95%;
+    margin-top: 71px;
+    margin-bottom: 10px;
+    margin-left: 6px;
+    padding: 7px 15px 8px;
+    float: none;
+    border: 1px solid #f7e769;
+    background-color: transparent;
+    -webkit-transition: color 200ms ease, border-color 200ms ease;
+    transition: color 200ms ease, border-color 200ms ease;
+    color: #f7e769;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.shop-space{
+	padding-bottom: 420px;
+}
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left:0; top: 2px;
+  width: 17px; height: 17px;
+  border: 1px solid #aaa;
+  background: #f8f8f8;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.3)
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: '✔';
+  position: absolute;
+  top: 3px; left: 4px;
+  font-size: 18px;
+  line-height: 0.8;
+  color: #09ad7e;
+  transition: all .2s;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+[type="checkbox"]:disabled:checked + label:after {
+  color: #999;
+}
+[type="checkbox"]:disabled + label {
+  color: #aaa;
+}
+/* accessibility */
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+  border: 1px dotted blue;
+}
+
+/* hover style just for information */
+label:hover:before {
+  border: 1px solid #4778d9!important;
+}
+
+
+
+
+
+
+/* Useless styles, just for demo design */
+
+
+.txtcenter {
+  margin-top: 4em;
+  font-size: .9em;
+  text-align: center;
+  color: #aaa;
+}
+.copy {
+ margin-top: 2em; 
+}
+.copy a {
+ text-decoration: none;
+ color: #4778d9;
+}
+
+@media screen and (max-width: 767px) {}
+
+@media (min-width: 768px) {
+}
+@media (max-device-width: 480px) and (orientation: landscape) {
+
+}
+@media (max-device-width: 480px) {
+	
+	.product-image {
+    width: 100%;
+    padding: 5px;
+    height: 390px;
+}
+	.product{
+		height: 600px;
+		margin-bottom: 20px;
+	}
+	.shop-space{
+		padding-bottom: 33px;
+	}
+}
